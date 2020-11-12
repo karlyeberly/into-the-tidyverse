@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+author: "Karly Eberly"
+date: "11/11/2020"
+output: html_document
+---
+
+```
+
+```
+```{r}
+library(tidyverse)
+covid_usa <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv")
+
+bank_branches <- here("Data", "BankBranchesData.txt")%>%
+  read_tsv()
+  
+```
+*Make sure read function corresponds to type of data file
